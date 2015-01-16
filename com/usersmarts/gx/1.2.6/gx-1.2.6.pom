@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?><project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.usersmarts</groupId>
+  <artifactId>gx</artifactId>
+  <version>1.2.6</version>
+  <packaging>pom</packaging>
+  <name>gx</name>
+
+  <scm>
+    <connection>scm:svn:https://www.usersmarts.com/subversion/us/trunk</connection>
+  </scm>
+
+  <modules>
+    <module>core</module>
+    <module>rcp</module>
+    <module>cx</module>
+    <module>sx</module>
+    <module>alertSmarts</module>
+<!--
+		<module>cssa</module>
+		<module>ieoc</module>
+-->
+  </modules>
+
+  <licenses>
+    <license>
+      <name>userSmarts GX Commercial License</name>
+      <url>
+				http://www.imagemattersllc.com/legal-notice/LICENSE-userSmartsGX.txt
+			</url>
+    </license>
+  </licenses>
+
+  <dependencies>
+
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.4</version>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-log4j12</artifactId>
+      <version>1.4.3</version>
+    </dependency>
+
+    <dependency>
+      <groupId>commons-io</groupId>
+      <artifactId>commons-io</artifactId>
+      <version>1.2</version>
+    </dependency>
+
+    <dependency>
+      <groupId>commons-lang</groupId>
+      <artifactId>commons-lang</artifactId>
+      <version>2.1</version>
+    </dependency>
+
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>servlet-api</artifactId>
+      <version>2.5</version>
+      <scope>provided</scope>
+    </dependency>
+
+  </dependencies>
+
+  <build>
+    <plugins>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>1.6</source>
+          <target>1.6</target>
+        </configuration>
+      </plugin>
+
+    </plugins>
+  </build>
+
+  <reporting>
+    <plugins>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>
+					maven-project-info-reports-plugin
+				</artifactId>
+      </plugin>
+
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>surefire-report-maven-plugin</artifactId>
+      </plugin>
+
+      <plugin>
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <configuration>
+          <aggregate>false</aggregate>
+        </configuration>
+      </plugin>
+
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>jxr-maven-plugin</artifactId>
+      </plugin>
+
+      <plugin>
+        <artifactId>maven-checkstyle-plugin</artifactId>
+      </plugin>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-pmd-plugin</artifactId>
+        <configuration>
+          <targetjdk>1.5</targetjdk>
+          <rulesets>
+            <ruleset>/rulesets/basic.xml</ruleset>
+            <ruleset>/rulesets/controversial.xml</ruleset>
+          </rulesets>
+          <format>xml</format>
+          <linkXref>true</linkXref>
+          <sourceEncoding>utf-8</sourceEncoding>
+          <minimumTokens>100</minimumTokens>
+        </configuration>
+      </plugin>
+
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>changes-maven-plugin</artifactId>
+      </plugin>
+
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>changelog-maven-plugin</artifactId>
+      </plugin>
+
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>taglist-maven-plugin</artifactId>
+      </plugin>
+
+    </plugins>
+  </reporting>
+
+<!--
+  	<pluginRepositories>
+    		<pluginRepository>
+      			<id>usersmarts.snapshots</id>
+      			<name>snapshot plugins</name>
+      			<url>http://www.usersmarts.com/px/repository/inhouse/</url>
+    		</pluginRepository>
+  	</pluginRepositories>
+-->
+
+  <distributionManagement>
+    <snapshotRepository>
+      <name>usersmarts snapshots</name>
+      <id>usersmarts.snapshots</id>
+      <url>file:///tmp/us-snapshot</url>
+    </snapshotRepository>
+    <repository>
+      <name>usersmarts distributions</name>
+      <id>usersmarts.distributions</id>
+      <url>file:///tmp/us-release</url>
+    </repository>
+  </distributionManagement>
+
+  <properties>
+    <spring.version>2.5.6</spring.version>
+    <h2.version>1.2.121</h2.version>
+    <acegi.version>1.0.3</acegi.version>
+    <rcp.tools.version>${pom.version}</rcp.tools.version>
+  </properties>
+
+</project>

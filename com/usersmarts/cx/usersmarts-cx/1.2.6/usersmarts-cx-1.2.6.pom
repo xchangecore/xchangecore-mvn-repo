@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+        <parent>
+                <groupId>com.usersmarts</groupId>
+                <artifactId>gx</artifactId>
+                <version>1.2.6</version>
+        </parent>
+
+  <groupId>com.usersmarts.cx</groupId>
+  <artifactId>usersmarts-cx</artifactId>
+  <name>cx</name>
+
+  <packaging>pom</packaging>
+
+  <dependencies>
+  </dependencies>
+
+
+  <modules>
+    <module>api</module>
+    <module>ows</module>
+    <module>pub</module>
+<!--
+    <module>hub</module>
+-->
+    <module>hbm</module>
+    <module>h2s</module>
+  </modules>
+
+
+  <properties>
+	<cx.spring.version>2.5.6</cx.spring.version>
+  </properties>
+</project>

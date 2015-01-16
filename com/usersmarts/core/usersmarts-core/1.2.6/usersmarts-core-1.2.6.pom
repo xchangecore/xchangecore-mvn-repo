@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+        <parent>
+                <groupId>com.usersmarts</groupId>
+                <artifactId>gx</artifactId>
+                <version>1.2.6</version>
+        </parent>
+
+	<groupId>com.usersmarts.core</groupId>
+	<artifactId>usersmarts-core</artifactId>
+	<packaging>pom</packaging>
+	<name>core</name>
+
+	<modules>
+		<module>util</module>
+		<module>xmf</module>
+		<module>xmf2</module>
+		<module>functor</module>
+		<module>geo</module>
+	</modules>
+
+
+	<reporting>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>
+					maven-project-info-reports-plugin
+				</artifactId>
+			</plugin>
+			<plugin>
+				<artifactId>maven-javadoc-plugin</artifactId>
+        			<configuration>
+                			<aggregate>true</aggregate>
+        			</configuration>
+			</plugin>
+
+		</plugins>
+	</reporting>
+
+	<properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.license.licenseFile>LICENSE.txt</maven.license.licenseFile>
+	</properties>
+</project>

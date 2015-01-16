@@ -1,0 +1,34 @@
+#NOTE: This is an internal implementation file, its format can be changed without prior notice.
+#Fri Jan 03 10:50:28 EST 2014
+default-https\://svn.uicds.leidos.com/repository/.lastUpdated=1388763299783
+http\://maven.springframework.org/external/.lastUpdated=1388763300343
+https\://svn.uicds.leidos.com/repository/.lastUpdated=1388763612089
+http\://maven.geotoolkit.org/.error=
+default-https\://svn-dctd.saic.com/repository/.lastUpdated=1388716506889
+default-http\://uicds.usersmarts.com/maven/release/.lastUpdated=1388764228367
+http\://repository.springsource.com/maven/bundles/release/.lastUpdated=1388763300530
+http\://repository.springsource.com/maven/bundles/external/.lastUpdated=1388763300716
+http\://repository.springsource.com/maven/bundles/milestone/.error=
+http\://maven.springframework.org/external/.error=
+http\://svn.apache.org/repos/asf/tuscany/maven/.lastUpdated=1388763296459
+http\://xml.apache.org/xalan-j/.error=
+http\://uicds.usersmarts.com/maven/release/.error=Could not transfer artifact com.usersmarts.cx\:cx-pub\:pom\:1.2.6 from/to usersmarts-release (http\://uicds.usersmarts.com/maven/release)\: Not authorized , ReasonPhrase\:Authorization Required.
+http\://mirrors.ibiblio.org/pub/mirrors/maven2/.lastUpdated=1388763300023
+http\://repo.maven.apache.org/maven2/.lastUpdated=1388763302506
+https\://svn-dctd.saic.com/repository/.error=Could not transfer artifact com.usersmarts.cx\:cx-pub\:pom\:1.2.6 from/to UICDS (https\://svn-dctd.saic.com/repository)\: hostname in certificate didn't match\: <svn-dctd.saic.com> \!\= <svn.uicds.leidos.com> OR <svn.uicds.leidos.com> OR <www.svn.uicds.leidos.com>
+http\://dev.anyframejava.org/maven/repo/.error=
+http\://dev.anyframejava.org/maven/repo/.lastUpdated=1388763302414
+http\://svn.apache.org/repos/asf/tuscany/maven/.error=
+http\://repo.maven.apache.org/maven2/.error=
+http\://repository.springsource.com/maven/bundles/external/.error=
+http\://maven.springframework.org/release/.lastUpdated=1388763300187
+http\://mirrors.ibiblio.org/pub/mirrors/maven2/.error=
+https\://oss.sonatype.org/content/repositories/JBoss/.error=
+http\://xml.apache.org/xalan-j/.lastUpdated=1388763579224
+https\://svn.uicds.leidos.com/repository/.error=
+http\://maven.geotoolkit.org/.lastUpdated=1388763301759
+9777c2e125fda736798920ee3590fb923467f17e@default-https\://svn-dctd.saic.com/repository/.lastUpdated=1388763561384
+https\://oss.sonatype.org/content/repositories/JBoss/.lastUpdated=1388763301421
+http\://repository.springsource.com/maven/bundles/release/.error=
+http\://repository.springsource.com/maven/bundles/milestone/.lastUpdated=1388763300896
+http\://maven.springframework.org/release/.error=
